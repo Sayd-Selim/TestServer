@@ -66,14 +66,14 @@ const App = () => {
 
       // Отправка файла на сервер
       // if(newState) {
-        await axios.post('https://68b4-85-115-248-174.ngrok.io/upload', formData)
+        await axios.post('https://9fa3-85-115-248-174.ngrok.io/upload', formData)
         // console.log('data2',data2);
       // }
 
 
 
       // Получение данных с сервера
-      const { data } = await axios.get('https://68b4-85-115-248-174.ngrok.io/loading')
+      const { data } = await axios.get('https://9fa3-85-115-248-174.ngrok.io/loading')
       console.log('data',data);
       setState(data[data.length - 1])
 
