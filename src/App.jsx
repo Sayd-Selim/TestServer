@@ -66,11 +66,15 @@ const App = () => {
 
       // Отправка файла на сервер
       // if(newState) {
-        await axios.post('https://test-server-one-iota.vercel.app/upload', formData);
+        await axios.post('http://localhost:3001/upload', formData)
+        // console.log('data2',data2);
+      // }
 
-        // Получение данных с сервера
-        const { data } = await axios.get('https://test-server-one-iota.vercel.app/loading');
-        console.log('data', data);
+
+
+      // Получение данных с сервера
+      const { data } = await axios.get('http://localhost:3001/loading')
+      console.log('data',data);
       setState(data[data.length - 1])
 
       // console.log('response',data.length);
